@@ -58,9 +58,9 @@ const Navbar = props => {
         justify="space-between"
       >
         <Flex align="center" mr={5}>
-          <Heading as="h1" size="lg" letterSpacing={'tighter'}>
-            <Logo />
-          </Heading>
+        <LinkItem href="/" path={path}>
+            Rahul Arepaka
+          </LinkItem>
         </Flex>
 
         <Stack
@@ -71,24 +71,36 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/works" path={path}>
-            Works
+          <LinkItem href="/achievements  " path={path}>
+            Achievements
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
-            Posts
+          <LinkItem href="/projects" path={path}>
+            Projects
           </LinkItem>
           <LinkItem
             _target="_blank"
-            href="https://github.com/craftzdog/craftzdog-homepage"
+            href="https://drive.google.com/file/d/1iGF3B8WIjg4tHNcW93e6fmZrTAPka2UQ/view?usp=sharing"
             path={path}
             display="inline-flex"
             alignItems="center"
             style={{ gap: 4 }}
             pl={2}
           >
-            <IoLogoGithub />
-            Source
+            Resume
           </LinkItem>
+
+            <LinkItem
+            _target="_blank"
+            href="https://drive.google.com/file/d/1Xqn4qYNiPXKIVoS0IKgzHxub86FI71HR/view?usp=sharing"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            Curriculum vitae
+          </LinkItem>
+
         </Stack>
 
         <Box flex={1} align="right">
@@ -107,16 +119,22 @@ const Navbar = props => {
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
                 <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
+                  <MenuItem as={Link}>Achievements</MenuItem>
                 </NextLink>
                 <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
+                  <MenuItem as={Link}>Projects</MenuItem>
                 </NextLink>
                 <MenuItem
                   as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
+                  href="https://drive.google.com/file/d/1iGF3B8WIjg4tHNcW93e6fmZrTAPka2UQ/view?usp=sharing"
                 >
-                  View Source
+                  Resume
+                </MenuItem>
+                <MenuItem
+                  as={Link}
+                  href=""
+                >
+                  Curriculum vitae
                 </MenuItem>
               </MenuList>
             </Menu>

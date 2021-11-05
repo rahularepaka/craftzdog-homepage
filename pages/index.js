@@ -22,7 +22,9 @@ import {
   IoLogoTwitter,
   IoLogoInstagram,
   IoLogoGithub,
-  IoLogoDiscord
+  IoLogoDiscord,
+  IoLogoLinkedin,
+  IoLogoGoogle
 } from 'react-icons/io5'
 import thumbYouTube from '../public/images/links/youtube.png'
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
@@ -30,25 +32,20 @@ import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 const Home = () => (
   <Layout>
     <Container>
-      <Box
-        borderRadius="lg"
-        mb={6}
-        p={3}
-        textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-      >
-        Hello, I&apos;m a full-stack developer based in Japan!
-      </Box>
 
-      <Box display={{ md: 'flex' }}>
+        <br/><br/>
+
+        <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Takuya Matsuyama
+            Rahul Arepaka
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <p>Undergraduate Robotics Researcher in Agriculture</p>
+          <p>Computer Science at Mahindra University</p>
         </Box>
+
         <Box
-          flexShrink={0}
+          flexShrink={0} 
           mt={{ base: 4, md: 0 }}
           ml={{ md: 6 }}
           textAlign="center"
@@ -60,164 +57,86 @@ const Home = () => (
             maxWidth="100px"
             display="inline-block"
             borderRadius="full"
-            src="/images/takuya.jpg"
+            src="/images/me.png"
             alt="Profile image"
           />
         </Box>
+
       </Box>
+      <br/>
+
+      <Box
+        borderRadius="lg"
+        mb={6}
+        p={3}
+        textAlign="center"
+        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+      >
+        Currently, Researching on Continous Laser Weeding in Mobile Robots at Farming Revolution GmbH
+      </Box> 
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          About 
         </Heading>
-        <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <NextLink href="/works/inkdrop">
-            <Link>Inkdrop</Link>
-          </NextLink>
-          .
-        </Paragraph>
+        <p>A II-Year student pursing Computer Science and Engineering at Ecole Centrale School of Engineering, Mahindra University.
+          <br /> <br />Currently, working with Farming Revolution GmbH (Deepfield Robotics, Bosch) on a Research Project on Vision Based Laser Targeting System for Weeding in Mobile Robots.
+          <br /><br />Previously, worked on Laser Weeding for CNC-based farmbot with an open-source organization called FarmBot Inc.
+          <br /><br />I was part of World Robotics Olympiad as Team UAE in 2018 ,FIRST Tech Challenge and Judge at FIRST Lego League in 2019/2020 and World Robotics Olympiad in 2021.</p>
         <Box align="center" my={4}>
-          <NextLink href="/works">
+          <NextLink href="/projects">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              My portfolio
+              Things which I works on
             </Button>
           </NextLink>
         </Box>
       </Section>
 
-      <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
-          Bio
-        </Heading>
-        <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
-        </BioSection>
-        <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
-        </BioSection>
-        <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
-        </BioSection>
-        <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Works as a freelance
-        </BioSection>
-      </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          I ♥
-        </Heading>
-        <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
-        </Paragraph>
-      </Section>
-
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          On the web
+          Social
         </Heading>
         <List>
-          <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://github.com/rahularepaka" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoGithub} />}
               >
-                @craftzdog
               </Button>
             </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
+
+          
+            <Link href="https://www.linkedin.com/in/rahul-arepaka/" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<Icon as={IoLogoTwitter} />}
+                leftIcon={<Icon as={IoLogoLinkedin} />}
               >
-                @inkdrop_app
               </Button>
             </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<Icon as={IoLogoTwitter} />}
-              >
-                @craftzdog
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
+          
+            <Link href="https://instagram.com/rahularepaka" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoInstagram} />}
               >
-                @craftzdog
               </Button>
             </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://discord.gg/QfsG5Kj" target="_blank">
+
+            <Link href="mailto:rahul.arepaka@gmail.com" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<Icon as={IoLogoDiscord} />}
+                leftIcon={<Icon as={IoLogoGoogle} />}
               >
-                Discord
               </Button>
             </Link>
-          </ListItem>
+
         </List>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
-          >
-            My YouTube channel
-          </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
-          >
-            A Markdown note-taking app
-          </GridItem>
-        </SimpleGrid>
-
-        <Box align="center" my={4}>
-          <NextLink href="/posts">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              Popular posts
-            </Button>
-          </NextLink>
-        </Box>
       </Section>
     </Container>
   </Layout>
