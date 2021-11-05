@@ -70,7 +70,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Rahul Arepaka
           </Heading>
-          <p>Undergraduate Robotics Researcher in Agriculture</p>
+          <p>Undergraduate Robotics Researcher</p>
         </Box>
 
         
