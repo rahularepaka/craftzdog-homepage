@@ -2,13 +2,14 @@ import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-
+/*
 import thumbFishWorkflow from '../public/images/contents/youtube-fish-workflow.jpg'
 import thumbMyDeskSetup from '../public/images/contents/youtube-my-desk-setup.jpg'
 import thumb500PaidUsers from '../public/images/contents/blog-500-paid-users.jpg'
 import thumbFinancialGoal from '../public/images/contents/blog-financial-goal.png'
 import thumbHowToPriceYourself from '../public/images/contents/blog-how-to-price-yourself.jpg'
 import thumb50xFaster from '../public/images/contents/youtube-50x-faster.jpg'
+*/
 import Yolo from '../public/images/contents/yolo.jpeg'
 import car from '../public/images/contents/car.png'
 import laser from '../public/images/contents/laser.jpg'
