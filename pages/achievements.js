@@ -1,4 +1,4 @@
-import { Container, Heading } from '@chakra-ui/react'
+import { Container, Heading ,Box, useColorModeValue} from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 /*
@@ -16,9 +16,21 @@ import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
 */
 const Works = () => (
   <Layout title="Works">
+    <br/>
+    <Container>
+      <Box
+        borderRadius="lg"
+        mb={6}
+        p={3}
+        textAlign="center"
+        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+      >
+        Recently, I was a Judge at the World Robotics Olympiad 2021 Nationals UAE : POWERBOTS - THE FUTURE OF ENERGY
+      </Box>
+    </Container>
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
-        <br/><br/>
+        
         Here, some of things which I achieved!
       </Heading>
 

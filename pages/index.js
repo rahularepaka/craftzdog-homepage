@@ -27,8 +27,16 @@ import {
 
 const Home = () => (
   <Layout>
-
-    <br/><br/>
+    <br/>
+    <Container><Box
+        borderRadius="lg"
+        mb={6}
+        p={3}
+        textAlign="center"
+        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+      >
+        Marhaban 👋, Asmi Hu Rahul Arepaka 🤖
+      </Box></Container>
     
     <Box
           flexShrink={0} 

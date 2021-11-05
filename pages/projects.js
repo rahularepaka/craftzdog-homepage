@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
+import { Container, Heading, Box, SimpleGrid,useColorModeValue } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
@@ -24,9 +24,22 @@ import agri from '../public/images/contents/agri.jpg'
 
 const Posts = () => (
   <Layout title="Projects">
+    <br/>
+
     <Container>
+      <Box
+        borderRadius="lg"
+        mb={6}
+        p={3}
+        textAlign="center"
+        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+      >
+        Currently, Researching on Vision based laser targeting system for continous weeding in Moblie Robots
+      </Box> 
+    </Container>
+    <Container>
+      
       <Heading as="h3" fontSize={20} mb={4}>
-        <br/><br/>
         Here, Some of the Projects which I worked on
       </Heading>
 
