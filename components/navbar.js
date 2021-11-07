@@ -70,34 +70,29 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/achievements  " path={path}>
+          <LinkItem href="/achievements" path={path}>
             Achievements
           </LinkItem>
           <LinkItem href="/projects" path={path}>
             Projects
           </LinkItem>
-          <LinkItem
-            _target="_blank"
-            href="https://drive.google.com/file/d/1iGF3B8WIjg4tHNcW93e6fmZrTAPka2UQ/view?usp=sharing"
-            path={path}
-            display="inline-flex"
-            alignItems="center"
-            style={{ gap: 4 }}
-            pl={2}
-          >
-            Resume
-          </LinkItem>
-
+          
+          
+      
             <LinkItem
             _target="_blank"
-            href="https://drive.google.com/file/d/1Xqn4qYNiPXKIVoS0IKgzHxub86FI71HR/view?usp=sharing"
+            href="/work"
             path={path}
             display="inline-flex"
             alignItems="center"
             style={{ gap: 4 }}
             pl={2}
           >
-            Curriculum vitae
+            Work
+          </LinkItem>
+
+          <LinkItem href="/contact" path={path}>
+            Contact
           </LinkItem>
 
         </Stack>
@@ -123,18 +118,14 @@ const Navbar = props => {
                 <NextLink href="/projects" passHref>
                   <MenuItem as={Link}>Projects</MenuItem>
                 </NextLink>
-                <MenuItem
-                  as={Link}
-                  href="https://drive.google.com/file/d/1iGF3B8WIjg4tHNcW93e6fmZrTAPka2UQ/view?usp=sharing"
-                >
-                  Resume
-                </MenuItem>
-                <MenuItem
-                  as={Link}
-                  href="https://drive.google.com/file/d/1Xqn4qYNiPXKIVoS0IKgzHxub86FI71HR/view?usp=sharing"
-                >
-                  Curriculum vitae
-                </MenuItem>
+                <NextLink href="/work" passHref>
+                  <MenuItem as={Link}>Work</MenuItem>
+                </NextLink>
+                <NextLink href="/contact" passHref>
+                  <MenuItem as={Link}>Contact</MenuItem>
+                </NextLink>
+                
+                
               </MenuList>
             </Menu>
           </Box>

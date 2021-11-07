@@ -29,10 +29,9 @@ const Works = () => (
       </Box>
     </Container>
     <Container>
-      <Heading as="h3" fontSize={20} mb={4}>
-        
-        Here, some of things which I achieved!
-      </Heading>
+      <Heading as="h3" variant="section-title">
+          Here, some of things which I achieved!
+        </Heading>
 
         <Section>
         <li><b>Judge</b> at the World Robotics Olympiad 2021 - Nationals UAE</li><br/>
