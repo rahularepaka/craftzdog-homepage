@@ -36,9 +36,10 @@ const Works = () => (
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       >
-        If you need chai-time, or just want to message me, don't hesitate to reach out to me
+        {"If you need chai-time, or just want to message me, don't hesitate to reach out to me"}
       </Box>
     </Container>
+
 
         <Box
           flexShrink={0} 
@@ -103,7 +104,6 @@ const Works = () => (
             </Link>
 
           </ListItem>
-
           
         </List>
       </Section>
