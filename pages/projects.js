@@ -1,6 +1,5 @@
-import { Container, Heading, Box, SimpleGrid,useColorModeValue } from '@chakra-ui/react'
+import { Heading, Box, SimpleGrid,useColorModeValue } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
-import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 /*
 import thumbFishWorkflow from '../public/images/contents/youtube-fish-workflow.jpg'
@@ -20,13 +19,14 @@ import em from '../public/images/contents/em.jpg'
 import dolly from '../public/images/contents/dolly.jpg'
 import clara from '../public/images/contents/clara.jpg'
 import agri from '../public/images/contents/agri.jpg'
+import laser2 from '../public/images/contents/laser2.jpg'
+
 
 
 const Posts = () => (
   <Layout title="Projects">
     <br/>
 
-    <Container>
       <Box
         borderRadius="lg"
         mb={6}
@@ -36,16 +36,23 @@ const Posts = () => (
       >
         Currently, Researching on Vision based laser targeting system for continous weeding in Moblie Robots
       </Box> 
-    </Container>
-    <Container>
       
 
       <Heading as="h3" variant="section-title">
           Here, Some of the Projects which I worked on
         </Heading>
+        <br/>
+        <Heading as="h3" variant="section-title">
+          2021
+        </Heading>
 
-      <Section delay={0.1}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
+
+          <GridItem
+            title="Vision based laser targeting system for continous weeding in Moblie Robots"
+            thumbnail={laser2}
+          />
+
           <GridItem
             title="Object Detection using YOLOv4 and Streamlit WebApp"
             thumbnail={Yolo}
@@ -56,26 +63,24 @@ const Posts = () => (
             thumbnail={car}
             href="https://github.com/crypto-code/Car-Dashboard-Studio"
           />
-        </SimpleGrid>
-      </Section>
 
-      <Section delay={0.3}>
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             title="Laser Weeding for FarmBot"
             thumbnail={laser}
             href="https://blog.inkdrop.app/how-ive-attracted-the-first-500-paid-users-for-my-saas-that-costs-5-mo-7a5b94b8e820"
           />
+          <SimpleGrid></SimpleGrid>
+          <br/>
+          <Heading as="h3" variant="section-title">
+          2020
+        </Heading>
+        <br/>
           <GridItem
             title="Recipie Generator using API"
             thumbnail={food}
             href="https://github.com/rahularepaka/Recipe-Generator"
           />
-        </SimpleGrid>
-      </Section>
 
-      <Section delay={0.5}>
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             title="Mask and Temperature Detection"
             thumbnail={mask}
@@ -86,11 +91,13 @@ const Posts = () => (
             thumbnail={alcohol}
             href="https://github.com/rahularepaka/arduino_Alcoholdetection"
           />
-        </SimpleGrid>
-      </Section>
 
-      <Section delay={0.5}>
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+          <SimpleGrid></SimpleGrid>
+          <Heading as="h3" variant="section-title">
+          2019
+        </Heading>
+        <br/>
+
           <GridItem
             title="Waste Card Collector"
             thumbnail={em}
@@ -101,12 +108,13 @@ const Posts = () => (
             thumbnail={dolly}
             href=""
           />
-        </SimpleGrid>
-      </Section>
+        <br/>
+        <SimpleGrid></SimpleGrid>
+        <Heading as="h3" variant="section-title">
+          2018
+        </Heading>
+        <br/>
 
-
-      <Section delay={0.5}>
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             title="Clara"
             thumbnail={clara}
@@ -118,8 +126,6 @@ const Posts = () => (
             href=""
           />
         </SimpleGrid>
-      </Section>
-    </Container>
   </Layout>
 )
 

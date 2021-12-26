@@ -21,6 +21,7 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
+  
 
   return (
     <a href="/">
@@ -28,7 +29,7 @@ const Logo = () => {
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily='M PLUS Rounded 1c", sans-serif'
-          >
+          > 
             Rahul Arepaka
           </Text>
         </LogoBox>

@@ -24,12 +24,12 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
     <NextLink href={href} passHref>
       <Link
         p={2}
-        bg={active ? 'grassTeal' : undefined}
-        color={active ? '#202023' : inactiveColor}
+        bg={active ? '#202020' : undefined}
+        color={active ? '#FFFFFF' : inactiveColor}
         _target={_target}
         {...props}
       >
-        {children}
+        {children}  
       </Link>
     </NextLink>
   )
@@ -43,7 +43,7 @@ const Navbar = props => {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#ffffff40', '#20202380')}
+      bg={useColorModeValue('#ffffff40', '#151515')}
       style={{ backdropFilter: 'blur(10px)' }}
       zIndex={1}
       {...props}
@@ -58,7 +58,7 @@ const Navbar = props => {
       >
         <Flex align="center" mr={5}>
         <LinkItem href="/" path={path}>
-            Rahul Arepaka
+          Rahul Arepaka
           </LinkItem>
         </Flex>
 
@@ -70,30 +70,33 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/achievements" path={path}>
-            Achievements
+
+          <LinkItem href="/about" path={path}>
+            About
           </LinkItem>
-          <LinkItem href="/projects" path={path}>
-            Projects
-          </LinkItem>
-          
-          
-      
-            <LinkItem
+
+          <LinkItem
             _target="_blank"
             href="/work"
             path={path}
-            display="inline-flex"
-            alignItems="center"
-            style={{ gap: 4 }}
-            pl={2}
+            //display="inline-flex"
+            //alignItems="center"
+            //style={{ gap: 4 }}
+            //pl={2}
           >
             Work
           </LinkItem>
 
-          <LinkItem href="/contact" path={path}>
-            Contact
+          <LinkItem href="/projects" path={path}>
+            Projects
           </LinkItem>
+
+          <LinkItem href="/achievements" path={path}>
+            Achievements
+          </LinkItem>
+          
+          
+          
 
         </Stack>
 
@@ -121,9 +124,7 @@ const Navbar = props => {
                 <NextLink href="/work" passHref>
                   <MenuItem as={Link}>Work</MenuItem>
                 </NextLink>
-                <NextLink href="/contact" passHref>
-                  <MenuItem as={Link}>Contact</MenuItem>
-                </NextLink>
+                
                 
                 
               </MenuList>

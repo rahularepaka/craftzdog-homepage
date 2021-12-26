@@ -1,4 +1,4 @@
-import { Container, Heading ,Box, useColorModeValue,List,
+import {Heading ,Box, useColorModeValue,List,
   ListItem,Link,Button,Icon} from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
@@ -25,7 +25,6 @@ import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
 const Works = () => (
   <Layout title="Works">
     <br/>
-    <Container>
       <Box
         borderRadius="lg"
         mb={6}
@@ -35,9 +34,7 @@ const Works = () => (
       >
         Currently, Robotics Researcher at Farming Revolution GmbH  Laser Weeding Moblie Robots
       </Box>
-    </Container>
 
-    <Container>
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           Work Related Documents
@@ -47,7 +44,6 @@ const Works = () => (
             <Link href="https://drive.google.com/file/d/1Xqn4qYNiPXKIVoS0IKgzHxub86FI71HR/view?usp=sharing" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
                 leftIcon={<Icon as={IoBookmark} />}
               >
                 Curriculum vitae
@@ -57,10 +53,18 @@ const Works = () => (
             <Link href="https://drive.google.com/file/d/1iGF3B8WIjg4tHNcW93e6fmZrTAPka2UQ/view?usp=sharing" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
                 leftIcon={<Icon as={IoBookmark} />}
               >
                 Resume
+              </Button>
+            </Link>
+
+            <Link href="https://drive.google.com/file/d/1LkFl3pew0gRdKwFnCA6ynWbHB78GlL5J/view?usp=sharing" target="_blank">
+              <Button
+                variant="ghost"
+                leftIcon={<Icon as={IoBookmark} />}
+              >
+                LOR's
               </Button>
             </Link>
 
@@ -69,9 +73,7 @@ const Works = () => (
           
         </List>
       </Section>
-    </Container>
     
-    <Container>
       <Heading as="h3" variant="section-title">
           What I have been working on recently is below
         </Heading>
@@ -114,7 +116,6 @@ the open-source community.</li>
         </Section>
 
 
-    </Container>
   </Layout>
 )
 

@@ -1,16 +1,14 @@
-import NextLink from 'next/link'
+//import NextLink from 'next/link'
 import {
   Link,
-  Container,
   Heading,
   Box,
   Image,
   Button,
   List,
   Icon,
-  useColorModeValue
 } from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
+//import { ChevronRightIcon } from '@chakra-ui/icons'
 //import Paragraph from '../components/paragraph'
 //import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
@@ -20,23 +18,16 @@ import {
   IoLogoInstagram,
   IoLogoGithub,
   IoLogoLinkedin,
-  IoLogoGoogle
+  IoLogoGoogle,
+  IoLogoTwitter,
+  IoLogoMicrosoft
 } from 'react-icons/io5'
 //import thumbYouTube from '../public/images/links/youtube.png'
 //import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 
 const Home = () => (
   <Layout>
-    <br/>
-    <Container><Box
-        borderRadius="lg"
-        mb={6}
-        p={3}
-        textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-      >
-        Marhaban 👋, Asmi Hu Rahul Arepaka 🤖
-      </Box></Container>
+
     
     <Box
           flexShrink={0} 
@@ -45,68 +36,26 @@ const Home = () => (
           textAlign="center"
         >
           <Image
-            borderColor="whiteAlpha.800"
-            borderWidth={2}
-            borderStyle="solid"
-            maxWidth="300px"
             display="inline-block"
-            borderRadius="full"
-            src="/images/me.jpg"
+            src="/images/img1.png"
             alt="Profile image"
+            height = "500"
+            width = "600"
           />
-        </Box>
 
-
-
-    <Container>
-
-
-
-
-        <br/>
-
-        <Box display={{ md: 'center' }}>
-        <Box flexGrow={1}>
-          <Heading as="h2" variant="page-title">
-            Rahul Arepaka
+          <Heading as="h3" variant="page-title">
+            Hello, I'm Rahul Arepaka.
           </Heading>
-          <p>Undergraduate Robotics Researcher</p>
-        </Box>
+          <br/>
+          <p>
+            I am an undergraduate robotics researcher who is trying to bridge robotics, computer science, and engineering. I have a keen interest in robotics and computer vision.
+          </p>
+
+          <br></br>
+
 
         
-
-      </Box>
-      <br/>
-
-      <Box
-        borderRadius="lg"
-        mb={6}
-        p={3}
-        textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-      >
-        Currently, Researching on Continous Laser Weeding in Mobile Robots at Farming Revolution GmbH
-      </Box> 
-
-      <Section delay={0.1}>
-        <Heading as="h3" variant="section-title">
-          About 
-        </Heading>
-        <p>A II-Year student pursing Computer Science and Engineering at Ecole Centrale School of Engineering, Mahindra University.
-          <br /> <br />Currently, working with Farming Revolution GmbH (Deepfield Robotics, Bosch) on a Research Project on Vision Based Laser Targeting System for Weeding in Mobile Robots.
-          <br /><br />Previously, worked on Laser Weeding for CNC-based farmbot with an open-source organization called FarmBot Inc.
-          <br /><br />I was part of World Robotics Olympiad as Team UAE in 2018 ,FIRST Tech Challenge and Judge at FIRST Lego League in 2019/2020 and World Robotics Olympiad in 2021.</p>
-        <Box align="center" my={4}>
-          <NextLink href="/projects">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              Things which I works on
-            </Button>
-          </NextLink>
-        </Box>
-      </Section>
-
-
-      <Section delay={0.3}>
+              <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           Social
         </Heading>
@@ -114,7 +63,8 @@ const Home = () => (
             <Link href="https://github.com/rahularepaka" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                //colorScheme="teal"
+                align = "center"
                 leftIcon={<Icon as={IoLogoGithub} />}
               >
               </Button>
@@ -124,7 +74,7 @@ const Home = () => (
             <Link href="https://www.linkedin.com/in/rahul-arepaka/" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                //colorScheme="teal"
                 leftIcon={<Icon as={IoLogoLinkedin} />}
               >
               </Button>
@@ -133,7 +83,6 @@ const Home = () => (
             <Link href="https://instagram.com/rahularepaka" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
                 leftIcon={<Icon as={IoLogoInstagram} />}
               >
               </Button>
@@ -142,8 +91,23 @@ const Home = () => (
             <Link href="mailto:rahul.arepaka@gmail.com" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
                 leftIcon={<Icon as={IoLogoGoogle} />}
+              >
+              </Button>
+            </Link>
+
+             <Link href="mailto:rahul20ucse156@mahindrauniversity.edu.in" target="_blank">
+              <Button
+                variant="ghost"
+                leftIcon={<Icon as={IoLogoMicrosoft} />}
+              >
+              </Button>
+            </Link>
+
+            <Link href="https://twitter.com/RahulArepaka" target="_blank">
+              <Button
+                variant="ghost"
+                leftIcon={<Icon as={IoLogoTwitter} />}
               >
               </Button>
             </Link>
@@ -151,7 +115,16 @@ const Home = () => (
         </List>
 
       </Section>
-    </Container>
+
+        </Box>
+
+
+
+
+      
+
+
+
   </Layout>
 )
 
