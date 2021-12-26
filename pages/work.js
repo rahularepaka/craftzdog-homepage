@@ -64,7 +64,7 @@ const Works = () => (
                 variant="ghost"
                 leftIcon={<Icon as={IoBookmark} />}
               >
-                LOR's
+                LOR&apos;s
               </Button>
             </Link>
 

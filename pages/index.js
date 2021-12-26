@@ -44,7 +44,7 @@ const Home = () => (
           />
 
           <Heading as="h3" variant="page-title">
-            Hello, I'm Rahul Arepaka.
+            Hello, I&apos;m Rahul Arepaka.
           </Heading>
           <br/>
           <p>
