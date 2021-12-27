@@ -52,11 +52,14 @@ const Home = () => (
             Hello, I&apos;m Rahul Arepaka.
           </Heading>
           <br/>
+          
           <p>
-            I am an undergraduate robotics researcher who is trying to bridge robotics, computer science, and engineering. I have a keen interest in robotics and computer vision.
+            I am an undergraduate robotics researcher who is trying to bridge robotics, computer science, and engineering in the field of agriculture. I have a keen interest in robotics and computer vision.
           </p>
 
           <br></br>
+
+          <small> Updated : 27-December-2021</small>
 
 
         

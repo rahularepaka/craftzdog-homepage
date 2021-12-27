@@ -31,7 +31,10 @@ import {
   IoLogoDesignernews,
   IoMusicalNote,
   IoGameControllerOutline,
-  IoMicOffOutline
+  IoMicOffOutline,
+  IoLaptopOutline,
+  IoTvOutline,
+  IoLaptop
 } from 'react-icons/io5'
 //import thumbYouTube from '../public/images/links/youtube.png'
 //import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
@@ -83,6 +86,7 @@ const Home = () => (
         <li>Full Name : Sai Phani Rahul Arepaka</li>
         <li>DOB : 05-October-2001</li>
         <li>Zodia Sign : Libra</li>
+        <li>Many of my friends said this is so true about me : <a href="https://www.urbandictionary.com/define.php?term=Rahul">Urban Dictionary</a></li>
       </Section>
 
 
@@ -95,6 +99,25 @@ const Home = () => (
           <br /><br />Previously, worked on Laser Weeding for CNC-based farmbot with an open-source organization called FarmBot Inc.
           <br /><br />I was part of World Robotics Olympiad as Team UAE in 2018 ,FIRST Tech Challenge and Judge at FIRST Lego League in 2019/2020 and World Robotics Olympiad in 2021.</p>
 
+      </Section>
+
+      <Section>
+        <Heading as="h3" variant="section-title">
+          Sweet Short Introduction
+        </Heading>
+        <p>🌱 20-year-old CS Student trying to build/research on robots in the field of Agriculture and turn into Agritech Startup with RaaS 🤖<p/>
+</p><br></br>
+
+<p>⚡ Currently, working with Farming Revolution GmbH (Deepfield Robotics, Bosch) on a Research Project on Laser Weeding in Moblie Robots using Pan-Tilt System in Mahindra University ☘️
+</p><br></br>
+<p>😅 Up to this point, best regret :
+</p><br></br>
+<li>Bunking classes in High School to work on "Cable Suspended Robots for Agriculture" in the robotics lab led me to win the National Robotics Olympiad 2018, represent the UAE, and ranked 14th place in the World Finals in Thailand 2018 🌿
+</li><br></br>
+<li>Rejected abroad university acceptance letters to study in India, which could be the best place to work on agriculture field in the world (I feel) 🧑‍🏭
+</li><br></br>
+
+👨‍🏭 Open to working on "Collaboration Robotics Research Projects"<br></br>
       </Section>
 
       <Heading as="h2" variant="section-title">
@@ -114,6 +137,18 @@ const Home = () => (
 
           </SimpleGrid>
 
+
+        <Section delay={0.1}>
+        <Heading as="h3" variant="section-title">
+          My Setup 
+        </Heading>
+        <li>{<Icon as={IoLaptopOutline}/>} Custom PC Build with i5-8500K, 16GB Cosiar Vengence RGB RAM , MSI GTX1050Ti 4GB, Factual Design Case, 650W PSU, MSI Gaming Mouse and 60% Mechanical Keyboard</li>
+        <li>{<Icon as={IoLaptop}/>} Asus ROG Zephyrus M16 with i9-11800H, 32GB RAM, 16:10 165Hz , RTX 3070 8GB, 2TB SSD</li>
+        <li>{<Icon as={IoTvOutline}/>} Raspberry Pi Model B+, Arduino UNO, Arduino MEGA, and Nvidia Jetson Nano</li>
+
+
+      
+      </Section>
 
           <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
