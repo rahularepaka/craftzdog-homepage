@@ -103,12 +103,12 @@ const Home = () => (
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            title="High School : Our Own High School Al Warqa'a"
+            title="Our Own High School Al Warqa'a"
             thumbnail={oow}
           />
 
           <GridItem
-            title="University : Ecole School of Engineering, Mahindra University"
+            title="Ecole School of Engineering, Mahindra University"
             thumbnail={mu}
           />
 
