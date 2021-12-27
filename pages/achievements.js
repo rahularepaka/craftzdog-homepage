@@ -28,6 +28,8 @@ import uwod from '../public/images/contents/uowd.jpg'
 import wro2 from '../public/images/contents/wro2.jpg'
 
 import win from '../public/images/contents/win.jpg'
+import oow from '../public/images/contents/oow.jpg'
+
 
 
 
@@ -79,6 +81,11 @@ const Works = () => (
           <GridItem
             title="Mentor and Judge at the FIRST Lego League – National Level 2020"
             thumbnail={fll}
+          />
+
+          <GridItem
+            title="Principal Award of Excellence for Best All Rounder - AISCEE 2020"
+            thumbnail={oow}
           />
 
           <Section/>
