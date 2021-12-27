@@ -112,12 +112,12 @@ const Home = () => (
 </p><br></br>
 <p>😅 Up to this point, best regret :
 </p><br></br>
-<li>Bunking classes in High School to work on "Cable Suspended Robots for Agriculture" in the robotics lab led me to win the National Robotics Olympiad 2018, represent the UAE, and ranked 14th place in the World Finals in Thailand 2018 🌿
+<li>Bunking classes in High School to work on Cable Suspended Robots for Agriculture in the robotics lab led me to win the National Robotics Olympiad 2018, represent the UAE, and ranked 14th place in the World Finals in Thailand 2018 🌿
 </li><br></br>
 <li>Rejected abroad university acceptance letters to study in India, which could be the best place to work on agriculture field in the world (I feel) 🧑‍🏭
 </li><br></br>
 
-👨‍🏭 Open to working on "Collaboration Robotics Research Projects"<br></br>
+👨‍🏭 Open to working on Collaboration Robotics Research Projects<br></br>
       </Section>
 
       <Heading as="h2" variant="section-title">
