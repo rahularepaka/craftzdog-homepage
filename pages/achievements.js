@@ -29,7 +29,7 @@ import wro2 from '../public/images/contents/wro2.jpg'
 
 import win from '../public/images/contents/win.jpg'
 import oow from '../public/images/contents/oow.jpg'
-import nro  from '../public/images/contents/nro.jpg'
+import nro  from '../public/images/contents/nro.JPG'
 
 
 
