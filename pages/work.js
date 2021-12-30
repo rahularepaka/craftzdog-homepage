@@ -1,11 +1,17 @@
 import {Heading ,Box, useColorModeValue,List,
-  ListItem,Link,Button,Icon} from '@chakra-ui/react'
+  ListItem,Link,Button,Icon,SimpleGrid} from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 
 import {
-  IoBookmark
+  IoBook,
+  IoBookmark, IoHardwareChip
 } from 'react-icons/io5'
+
+import { GridItem } from '../components/grid-item'
+
+import mu from '../public/images/contents/mu.jpg'
+import oow from '../public/images/contents/oow.jpg'
 
 //import { BioSection, BioYear } from '../components/bio'
 
@@ -70,12 +76,113 @@ const Works = () => (
 
           </ListItem>
 
-          
+        <Heading as="h3" variant="section-title">
+          Skills
+        </Heading>
+
+              <ListItem>
+              <Button
+                variant="ghost"
+                leftIcon={<Icon as={IoHardwareChip} />}
+              >
+                Python
+              </Button>
+
+              <Button
+                variant="ghost"
+                leftIcon={<Icon as={IoHardwareChip} />}
+              >
+                C
+              </Button>
+
+              <Button
+                variant="ghost"
+                leftIcon={<Icon as={IoHardwareChip} />}
+              >
+                C++
+              </Button>
+
+              <Button
+                variant="ghost"
+                leftIcon={<Icon as={IoHardwareChip} />}
+              >
+                Linux
+              </Button>
+
+              <Button
+                variant="ghost"
+                leftIcon={<Icon as={IoHardwareChip} />}
+              >
+                Robotics Operating System
+              </Button>
+
+               <Button
+                variant="ghost"
+                leftIcon={<Icon as={IoHardwareChip} />}
+              >
+                Git
+              </Button>
+
+              <Button
+                variant="ghost"
+                leftIcon={<Icon as={IoHardwareChip} />}
+              >
+                Arduino
+              </Button>
+
+              <Button
+                variant="ghost"
+                leftIcon={<Icon as={IoHardwareChip} />}
+              >
+                Raspberry Pi
+              </Button>
+
+              <Button
+                variant="ghost"
+                leftIcon={<Icon as={IoHardwareChip} />}
+              >
+                Nvidia Jetson Platform
+              </Button>
+
+              <Button
+                variant="ghost"
+                leftIcon={<Icon as={IoHardwareChip} />}
+              >
+                OpenCV
+              </Button>
+
+              <Button
+                variant="ghost"
+                leftIcon={<Icon as={IoHardwareChip} />}
+              >
+                Internet of Things
+              </Button>
+
+              <Button
+                variant="ghost"
+                leftIcon={<Icon as={IoHardwareChip} />}
+              >
+                Gazebo Simulation
+              </Button>
+
+              <Button
+                variant="ghost"
+                leftIcon={<Icon as={IoHardwareChip} />}
+              >
+                RViz
+              </Button>
+
+          </ListItem>
+
+       
         </List>
       </Section>
+
+
+
     
       <Heading as="h3" variant="section-title">
-          What I have been working on recently is below
+          Work Experience
         </Heading>
 
         <Section>
@@ -114,6 +221,66 @@ the open-source community.</li>
           <br/><br/>
           
         </Section>
+
+        <Heading as="h2" variant="section-title">
+          Education
+        </Heading>
+
+        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+          <GridItem
+            title="CBSE - Science Stream with Computer Science : GEMS Our Own High School Al Warqa'a - Boys Batch of 2020"
+            thumbnail={oow}
+          />
+          <GridItem
+            title="B.Tech - Computer Science and Engineering : Ecole School of Engineering, Mahindra University Batch of 2024"
+            thumbnail={mu}
+          />
+
+          </SimpleGrid>
+
+        <br></br>
+        <Heading as="h3" variant="section-title">
+          Notable Coursework
+        </Heading>
+
+        <Section>
+              <Button
+                variant="ghost"
+                leftIcon={<Icon as={IoBook} />}
+              >
+                Optimization for Artificial Intelligence
+              </Button>
+
+              <Button
+                variant="ghost"
+                leftIcon={<Icon as={IoBook} />}
+              >
+                Discrete Mathematics Structures
+              </Button>
+
+              <Button
+                variant="ghost"
+                leftIcon={<Icon as={IoBook} />}
+              >
+                Data Structures and Algorithms
+              </Button>
+
+              <Button
+                variant="ghost"
+                leftIcon={<Icon as={IoBook} />}
+              >
+                Programming Workshop
+              </Button>
+
+              <Button
+                variant="ghost"
+                leftIcon={<Icon as={IoBook} />}
+              >
+                Introduction to Computer Science
+              </Button>
+        </Section>
+
+       
 
 
   </Layout>

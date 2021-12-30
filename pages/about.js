@@ -6,11 +6,9 @@ import {
   Image,
   Button,
   List,
-  Icon,
-  SimpleGrid,
+  Icon
 } from '@chakra-ui/react'
 
-import { GridItem } from '../components/grid-item'
 
 
 //import { ChevronRightIcon } from '@chakra-ui/icons'
@@ -38,10 +36,6 @@ import {
 } from 'react-icons/io5'
 //import thumbYouTube from '../public/images/links/youtube.png'
 //import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
-
-
-import mu from '../public/images/contents/mu.jpg'
-import oow from '../public/images/contents/oow.jpg'
 
 
 
@@ -120,22 +114,7 @@ const Home = () => (
 👨‍🏭 Open to working on Collaboration Robotics Research Projects<br></br>
       </Section>
 
-      <Heading as="h2" variant="section-title">
-          Education
-        </Heading>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            title="Our Own High School Al Warqa'a"
-            thumbnail={oow}
-          />
-
-          <GridItem
-            title="Ecole School of Engineering, Mahindra University"
-            thumbnail={mu}
-          />
-
-          </SimpleGrid>
 
 
         <Section delay={0.1}>

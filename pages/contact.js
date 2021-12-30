@@ -1,13 +1,13 @@
-import { Container, Heading ,Box, useColorModeValue,List,
-  ListItem,Link,Button,Icon, Image} from '@chakra-ui/react'
+import { Container, Heading ,Box,List,Link,Button,Icon} from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
-import Section from '../components/section'
 
 import {
   IoLogoGithub,
   IoLogoGoogle,
   IoLogoLinkedin,
-  IoLogoInstagram
+  IoLogoInstagram,
+  IoLogoMicrosoft,
+  IoLogoTwitter
 } from 'react-icons/io5'
 
 //import { BioSection, BioYear } from '../components/bio'
@@ -25,51 +25,48 @@ import thumbPichu2 from '../public/images/works/pichu2_eyecatch.png'
 import thumbFreeDBTagger from '../public/images/works/freedbtagger_eyecatch.png'
 import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
 */
+
+
+import dynamic from 'next/dynamic'
+
+import VoxelDogLoader from '../components/voxel-dog-loader'
+
+const LazyVoxelDog = dynamic(() => import('../components/voxel-dog'), {
+  ssr: false,
+  loading: () => <VoxelDogLoader />
+})
+
+
+
 const Works = () => (
   <Layout title="Works">
-    <br/>
     <Container>
+      <box><LazyVoxelDog /></box>
       <Box
-        borderRadius="lg"
-        mb={6}
-        p={3}
-        textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-      >
-        {"If you need chai-time, or just want to message me, don't hesitate to reach out to me"}
-      </Box>
-    </Container>
-
-
-        <Box
           flexShrink={0} 
           mt={{ base: 4, md: 0 }}
           ml={{ md: 6 }}
           textAlign="center"
         >
-          <Image
-            borderColor="whiteAlpha.800"
-            borderWidth={2}
-            borderStyle="solid"
-            maxWidth="300px"
-            display="inline-block"
-            borderRadius="full"
-            src="/images/me-1.png"
-            alt="Profile image"
-          />
-        </Box>
+          <Heading as="h2" variant="section-title">
+          Get in Touch
+        </Heading>
+        <br></br>
 
-    <Container>
-      <Section delay={0.3}>
+        <p>I am always looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+        
+
+
+        <br></br>
         <Heading as="h3" variant="section-title">
-            Social Channels
+          Social
         </Heading>
         <List>
-          <ListItem>
-              <Link href="https://github.com/rahularepaka" target="_blank">
+            <Link href="https://github.com/rahularepaka" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                //colorScheme="teal"
+                align = "center"
                 leftIcon={<Icon as={IoLogoGithub} />}
               >
               </Button>
@@ -79,7 +76,7 @@ const Works = () => (
             <Link href="https://www.linkedin.com/in/rahul-arepaka/" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                //colorScheme="teal"
                 leftIcon={<Icon as={IoLogoLinkedin} />}
               >
               </Button>
@@ -88,7 +85,6 @@ const Works = () => (
             <Link href="https://instagram.com/rahularepaka" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
                 leftIcon={<Icon as={IoLogoInstagram} />}
               >
               </Button>
@@ -97,17 +93,37 @@ const Works = () => (
             <Link href="mailto:rahul.arepaka@gmail.com" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
                 leftIcon={<Icon as={IoLogoGoogle} />}
               >
               </Button>
             </Link>
 
-          </ListItem>
-          
+             <Link href="mailto:rahul20ucse156@mahindrauniversity.edu.in" target="_blank">
+              <Button
+                variant="ghost"
+                leftIcon={<Icon as={IoLogoMicrosoft} />}
+              >
+              </Button>
+            </Link>
+
+            <Link href="https://twitter.com/RahulArepaka" target="_blank">
+              <Button
+                variant="ghost"
+                leftIcon={<Icon as={IoLogoTwitter} />}
+              >
+              </Button>
+            </Link>
+
         </List>
-      </Section>
+
+
+        </Box>
+      
+
+
+
     </Container>
+
   
   </Layout>
 )
