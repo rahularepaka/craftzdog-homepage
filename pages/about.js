@@ -63,10 +63,10 @@ const Home = () => (
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
-            maxWidth="200px"
+            maxWidth="150px"
             display="inline-block"
             borderRadius="full"
-            src="/images/me.jpg"
+            src="/images/me4.jpg"
             alt="Profile image"
           />
         </Box>
