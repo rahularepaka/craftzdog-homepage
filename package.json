@@ -8,8 +8,6 @@
     "start": "next start",
     "prettier": "prettier -write .",
     "lint": "next lint"
-    
-
   },
   "keywords": [],
   "author": "Takuya Matsuyama",
@@ -25,7 +23,9 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
-    "three": "^0.133.1"
+    "redux": "^4.1.2",
+    "three": "^0.133.1",
+    "video-react": "^0.15.0"
   },
   "devDependencies": {
     "eslint": "^7.32.0",

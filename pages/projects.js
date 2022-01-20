@@ -1,6 +1,7 @@
 import { Heading, Box, SimpleGrid,useColorModeValue } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
-import { GridItem } from '../components/grid-item'
+import { WorkGridItem } from '../components/grid-item'
+
 /*
 import thumbFishWorkflow from '../public/images/contents/youtube-fish-workflow.jpg'
 import thumbMyDeskSetup from '../public/images/contents/youtube-my-desk-setup.jpg'
@@ -48,23 +49,23 @@ const Posts = () => (
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
 
-          <GridItem
+          <WorkGridItem
             title="Vision based laser targeting system for continous weeding in Moblie Robots"
             thumbnail={laser2}
           />
 
-          <GridItem
+          <WorkGridItem
             title="Object Detection using YOLOv4 and Streamlit WebApp"
             thumbnail={Yolo}
             href="https://github.com/rahularepaka/ObjectDetectionYolov4Web"
           />
-          <GridItem
+          <WorkGridItem
             title="DAA Self Driving Car Dashboard"
             thumbnail={car}
             href="https://github.com/crypto-code/Car-Dashboard-Studio"
           />
 
-          <GridItem
+          <WorkGridItem
             title="Laser Weeding for FarmBot"
             thumbnail={laser}
             href="https://blog.inkdrop.app/how-ive-attracted-the-first-500-paid-users-for-my-saas-that-costs-5-mo-7a5b94b8e820"
@@ -75,18 +76,18 @@ const Posts = () => (
           2020
         </Heading>
         <br/>
-          <GridItem
+          <WorkGridItem
             title="Recipie Generator using API"
             thumbnail={food}
             href="https://github.com/rahularepaka/Recipe-Generator"
           />
 
-          <GridItem
+          <WorkGridItem
             title="Mask and Temperature Detection"
             thumbnail={mask}
             href="https://github.com/rahularepaka/maskdetection"
           />
-          <GridItem
+          <WorkGridItem
             title="Alcohol Detection with Engine Lock"
             thumbnail={alcohol}
             href="https://github.com/rahularepaka/arduino_Alcoholdetection"
@@ -98,12 +99,12 @@ const Posts = () => (
         </Heading>
         <br/>
 
-          <GridItem
+          <WorkGridItem
             title="Waste Card Collector"
             thumbnail={em}
             href="https://www.khaleejtimes.com/article/dubai-students-invent-machine-to-get-rid-of-massage-card-trash"
           />
-          <GridItem
+          <WorkGridItem
             title="Dolly"
             thumbnail={dolly}
             href=""
@@ -115,12 +116,12 @@ const Posts = () => (
         </Heading>
         <br/>
 
-          <GridItem
+          <WorkGridItem id="clara"
             title="Clara"
             thumbnail={clara}
-            href="https://github.com/rahularepaka/Project-Clara"
+            href=""
           />
-          <GridItem
+          <WorkGridItem
             title="AgriBot - Companion"
             thumbnail={agri}
             href=""
