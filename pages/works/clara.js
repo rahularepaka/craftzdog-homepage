@@ -178,11 +178,8 @@ So we made CLARA (Cable Lifted Automated Robot for Agriculture) is CDPR and her 
       playsInline
       src="/images/works/clara-video6.mp4"
       /><br></br>
-      <SimpleGrid columns={2} gap={2}>
+      <SimpleGrid columns={1} gap={2}>
         <WorkImage src="/images/works/clara13.jpg" alt="clara"/>
-        <WorkImage src="/images/works/clara15.jpg" alt="clara" />
-        <WorkImage src="/images/works/clara14.jpg" alt="clara" />
-        <WorkImage src="/images/works/clara16.jpg" alt="clara" />
       </SimpleGrid>
 
       <br></br>
@@ -275,7 +272,6 @@ So we made CLARA (Cable Lifted Automated Robot for Agriculture) is CDPR and her 
       <br></br>
       <SimpleGrid columns={2} gap={2}>
         <WorkImage src="/images/works/clara27.jpg" alt="clara"/>
-        <WorkImage src="/images/works/clara26.jpg" alt="clara"/>
         <WorkImage src="/images/works/clara33.jpg" alt="clara"/>
         <WorkImage src="/images/works/clara28.jpg" alt="clara"/>
       </SimpleGrid>
@@ -303,8 +299,6 @@ So we made CLARA (Cable Lifted Automated Robot for Agriculture) is CDPR and her 
       <br></br>
       <SimpleGrid columns={2} gap={2}>
         <WorkImage src="/images/works/clara35.jpg" alt="clara"/>
-        <WorkImage src="/images/works/clara36.jpg" alt="clara"/>
-        <WorkImage src="/images/works/clara37.jpg" alt="clara"/>
         <WorkImage src="/images/works/clara42.jpg" alt="clara"/>
         <WorkImage src="/images/works/clara38.jpg" alt="clara"/>
         <WorkImage src="/images/works/clara39.jpg" alt="clara"/>
