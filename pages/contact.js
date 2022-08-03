@@ -1,4 +1,4 @@
-import { Container, Heading ,Box,List,Link,Button,Icon} from '@chakra-ui/react'
+import { Container, Image, Heading ,Box,List,Link,Button,Icon} from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 
 import {
@@ -41,90 +41,87 @@ const LazyVoxelDog = dynamic(() => import('../components/voxel-dog'), {
 const Works = () => (
   <Layout title="Works">
     <Container>
-      <box><LazyVoxelDog /></box>
+      <Image
+        // maxWidth="150px"
+        display="inline-block"
+        src="/images/contents/ani.gif"
+        alt="Profile image"
+      />
       <Box
-          flexShrink={0} 
-          mt={{ base: 4, md: 0 }}
-          ml={{ md: 6 }}
-          textAlign="center"
-        >
-          <Heading as="h2" variant="section-title">
+        flexShrink={0}
+        mt={{ base: 4, md: 0 }}
+        ml={{ md: 6 }}
+        textAlign="center"
+      >
+        <Heading as="h2" variant="section-title">
           Get in Touch
         </Heading>
         <br></br>
 
-        <p>I am always looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
-        
-
+        <p>
+          I am always looking for any new opportunities, my inbox is always
+          open. Whether you have a question or just want to say hi, I’ll try my
+          best to get back to you!
+        </p>
 
         <br></br>
         <Heading as="h3" variant="section-title">
           Social
         </Heading>
         <List>
-            <Link href="https://github.com/rahularepaka" target="_blank">
-              <Button
-                variant="ghost"
-                //colorScheme="teal"
-                align = "center"
-                leftIcon={<Icon as={IoLogoGithub} />}
-              >
-              </Button>
-            </Link>
+          <Link href="https://github.com/rahularepaka" target="_blank">
+            <Button
+              variant="ghost"
+              //colorScheme="teal"
+              align="center"
+              leftIcon={<Icon as={IoLogoGithub} />}
+            ></Button>
+          </Link>
 
-          
-            <Link href="https://www.linkedin.com/in/rahul-arepaka/" target="_blank">
-              <Button
-                variant="ghost"
-                //colorScheme="teal"
-                leftIcon={<Icon as={IoLogoLinkedin} />}
-              >
-              </Button>
-            </Link>
-          
-            <Link href="https://instagram.com/rahularepaka" target="_blank">
-              <Button
-                variant="ghost"
-                leftIcon={<Icon as={IoLogoInstagram} />}
-              >
-              </Button>
-            </Link>
+          <Link
+            href="https://www.linkedin.com/in/rahul-arepaka/"
+            target="_blank"
+          >
+            <Button
+              variant="ghost"
+              //colorScheme="teal"
+              leftIcon={<Icon as={IoLogoLinkedin} />}
+            ></Button>
+          </Link>
 
-            <Link href="mailto:rahul.arepaka@gmail.com" target="_blank">
-              <Button
-                variant="ghost"
-                leftIcon={<Icon as={IoLogoGoogle} />}
-              >
-              </Button>
-            </Link>
+          <Link href="https://instagram.com/rahularepaka" target="_blank">
+            <Button
+              variant="ghost"
+              leftIcon={<Icon as={IoLogoInstagram} />}
+            ></Button>
+          </Link>
 
-             <Link href="mailto:rahul20ucse156@mahindrauniversity.edu.in" target="_blank">
-              <Button
-                variant="ghost"
-                leftIcon={<Icon as={IoLogoMicrosoft} />}
-              >
-              </Button>
-            </Link>
+          <Link href="mailto:rahul.arepaka@gmail.com" target="_blank">
+            <Button
+              variant="ghost"
+              leftIcon={<Icon as={IoLogoGoogle} />}
+            ></Button>
+          </Link>
 
-            <Link href="https://twitter.com/RahulArepaka" target="_blank">
-              <Button
-                variant="ghost"
-                leftIcon={<Icon as={IoLogoTwitter} />}
-              >
-              </Button>
-            </Link>
+          <Link
+            href="mailto:rahul20ucse156@mahindrauniversity.edu.in"
+            target="_blank"
+          >
+            <Button
+              variant="ghost"
+              leftIcon={<Icon as={IoLogoMicrosoft} />}
+            ></Button>
+          </Link>
 
+          <Link href="https://twitter.com/RahulArepaka" target="_blank">
+            <Button
+              variant="ghost"
+              leftIcon={<Icon as={IoLogoTwitter} />}
+            ></Button>
+          </Link>
         </List>
-
-
-        </Box>
-      
-
-
-
+      </Box>
     </Container>
-
-  
   </Layout>
 )
 
