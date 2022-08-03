@@ -1,7 +1,6 @@
 import { Badge, Heading, Center } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import { Title } from '../../components/work'
-import P from '../../components/paragraph'
 
 import '../../node_modules/video-react/dist/video-react.css' // import css
 ;<link rel="stylesheet" href="/css/video-react.css" />

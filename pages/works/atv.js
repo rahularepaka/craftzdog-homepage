@@ -6,7 +6,6 @@ import '../../node_modules/video-react/dist/video-react.css' // import css
 ;<link rel="stylesheet" href="/css/video-react.css" />
 
 import React from 'react'
-import { Player } from 'video-react'
 
 const Work = () => (
   <Layout title="Autonomous Electric ATV">

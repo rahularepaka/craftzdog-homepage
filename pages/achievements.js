@@ -29,125 +29,12 @@ import wro2 from '../public/images/contents/wro2.jpg'
 
 import win from '../public/images/contents/win.jpg'
 import oow from '../public/images/contents/oow.jpg'
-<<<<<<< HEAD
-import nro  from '../public/images/contents/nro.jpg'
-import robocon from '../public/images/contents/robocon.webp'
-
-=======
 import nro  from '../public/images/contents/nro.JPG'
->>>>>>> a9fe259b0c996547420636885516341da02ef3e2
 
 
 
 const Works = () => (
   <Layout title="Works">
-<<<<<<< HEAD
-    <br />
-    <Container></Container>
-    <Heading as="h3" variant="section-title">
-      Here, some of things which I achieved!
-    </Heading>
-    <br />
-
-    <Heading as="h2" variant="section-title">
-      2022
-    </Heading>
-
-    <SimpleGrid columns={[1, 2, 2]} gap={6}>
-      <GridItem
-        title="Represented University at DD-Robocon 2022 Nationals - IIT-Delhi"
-        thumbnail={robocon}
-      />
-
-      <Section />
-    </SimpleGrid>
-
-    <Heading as="h2" variant="section-title">
-      2021
-    </Heading>
-
-    <SimpleGrid columns={[1, 2, 2]} gap={6}>
-      <GridItem
-        title="Judge at the World Robotics Olympiad 2021 - Nationals UAE"
-        thumbnail={wro}
-      />
-
-      <GridItem
-        title="Mentor and Judge at the FIRST Lego League – National Level 2021"
-        thumbnail={fll}
-      />
-
-      <Section />
-    </SimpleGrid>
-
-    <Heading as="h2" variant="section-title">
-      2020
-    </Heading>
-
-    <SimpleGrid columns={[1, 2, 2]} gap={6}>
-      <GridItem
-        title="Finalist for Global Babson challenge (Top 10 Teams)"
-        thumbnail={bab}
-      />
-
-      <GridItem
-        title="First Place at Mahindra University Research Symposium"
-        thumbnail={mu}
-      />
-
-      <GridItem
-        title="Mentor and Judge at the FIRST Lego League – National Level 2020"
-        thumbnail={fll}
-      />
-
-      <GridItem
-        title="Principal Award of Excellence for Best All Rounder - AISCEE 2020"
-        thumbnail={oow}
-      />
-
-      <Section />
-    </SimpleGrid>
-
-    <Heading as="h2" variant="section-title">
-      2019
-    </Heading>
-
-    <SimpleGrid columns={[1, 2, 2]} gap={6}>
-      <GridItem title="Think Award at FIRST Tech Challenge" thumbnail={ftc} />
-
-      <GridItem title="Media Coverage for E-MC2 Project" thumbnail={emc2} />
-
-      <Section />
-    </SimpleGrid>
-
-    <Heading as="h2" variant="section-title">
-      2018
-    </Heading>
-
-    <SimpleGrid columns={[1, 2, 2]} gap={6}>
-      <GridItem
-        title="Ranked 14th in the World Robotics Olympiad at Thailand"
-        thumbnail={wro2}
-      />
-
-      <GridItem
-        title="1st Place in Open Category Robotics Demonstration at University of Wollongong, Dubai"
-        thumbnail={uwod}
-      />
-
-      <GridItem
-        title="1st Place in Technobizz Business Challenge"
-        thumbnail={win}
-      />
-
-      <GridItem
-        title="1st Place in National Robotics Olympiad 2018 and qualifed to represent UAE"
-        thumbnail={nro}
-      />
-
-      <Section />
-    </SimpleGrid>
-=======
     <br/>
     <Container>
       
@@ -252,7 +139,6 @@ const Works = () => (
           <Section/>
           </SimpleGrid>
 
->>>>>>> a9fe259b0c996547420636885516341da02ef3e2
   </Layout>
 )
 
