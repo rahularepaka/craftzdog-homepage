@@ -27,14 +27,14 @@ import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
 */
 
 
-import dynamic from 'next/dynamic'
+// import dynamic from 'next/dynamic'
 
-import VoxelDogLoader from '../components/voxel-dog-loader'
+// import VoxelDogLoader from '../components/voxel-dog-loader'
 
-const LazyVoxelDog = dynamic(() => import('../components/voxel-dog'), {
-  ssr: false,
-  loading: () => <VoxelDogLoader />
-})
+// const LazyVoxelDog = dynamic(() => import('../components/voxel-dog'), {
+//   ssr: false,
+//   loading: () => <VoxelDogLoader />
+// })
 
 
 

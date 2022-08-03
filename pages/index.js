@@ -23,14 +23,14 @@ import {
 } from 'react-icons/io5'
 //import thumbYouTube from '../public/images/links/youtube.png'
 //import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
-import dynamic from 'next/dynamic'
+// import dynamic from 'next/dynamic'
 
-import VoxelDogLoader from '../components/voxel-dog-loader'
+// import VoxelDogLoader from '../components/voxel-dog-loader'
 
-const LazyVoxelDog = dynamic(() => import('../components/voxel-dog'), {
-  ssr: false,
-  loading: () => <VoxelDogLoader />
-})
+// const LazyVoxelDog = dynamic(() => import('../components/voxel-dog'), {
+//   ssr: false,
+//   loading: () => <VoxelDogLoader />
+// })
 
 
 const Home = () => (
