@@ -75,8 +75,13 @@ const VoxelDog = () => {
       setControls(controls)
 
       loadGLTFModel(scene, '/robot2.glb', {
+<<<<<<< HEAD
+        receiveShadow: true,
+        castShadow: true
+=======
         receiveShadow: false,
         castShadow: false
+>>>>>>> a9fe259b0c996547420636885516341da02ef3e2
       }).then(() => {
         animate()
         setLoading(false)

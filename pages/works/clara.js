@@ -273,8 +273,9 @@ So we made CLARA (Cable Lifted Automated Robot for Agriculture) is CDPR and her 
       <SimpleGrid columns={2} gap={2}>
         <WorkImage src="/images/works/clara27.jpg" alt="clara"/>
         <WorkImage src="/images/works/clara33.jpg" alt="clara"/>
-        <WorkImage src="/images/works/clara28.jpg" alt="clara"/>
       </SimpleGrid>
+      <WorkImage src="/images/works/clara28.jpg" alt="clara"/>
+
       <br></br>
       <P>We also designed few posters for the WRO</P>
       <br></br>

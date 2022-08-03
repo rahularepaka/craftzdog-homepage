@@ -32,6 +32,46 @@ const LazyVoxelDog = dynamic(() => import('../components/voxel-dog'), {
   loading: () => <VoxelDogLoader />
 })
 
+<<<<<<< HEAD
+
+
+
+const Home = () => (
+  <Layout>
+    <Box
+      flexShrink={0}
+      mt={{ base: 4, md: 0 }}
+      ml={{ md: 6 }}
+      textAlign="center"
+    >
+      <box>
+        <LazyVoxelDog />
+      </box>
+
+      <br></br>
+      <Heading as="h3" variant="page-title">
+        Hello, I&apos;m Rahul Arepaka.
+      </Heading>
+      <br />
+
+      
+      <p>
+        As an{' '}
+        <u>
+          <b>Undergraduate Robotics Researcher</b>
+        </u>
+        <br></br>
+        My goal is to bridge robotics, computer science, and engineering in
+        agricultural applications and autonomous challenges. The field
+        of robotics and computer vision interests me greatly.
+      </p>
+
+      <br></br>
+
+      {/* <small> Updated : 27-December-2021</small> */}
+
+      <Section delay={0.3}>
+=======
 
 const Home = () => (
   <Layout>
@@ -64,10 +104,66 @@ const Home = () => (
 
         
               <Section delay={0.3}>
+>>>>>>> a9fe259b0c996547420636885516341da02ef3e2
         <Heading as="h3" variant="section-title">
           Social
         </Heading>
         <List>
+<<<<<<< HEAD
+          <Link href="https://github.com/rahularepaka" target="_blank">
+            <Button
+              variant="ghost"
+              //colorScheme="teal"
+              align="center"
+              leftIcon={<Icon as={IoLogoGithub} />}
+            ></Button>
+          </Link>
+
+          <Link
+            href="https://www.linkedin.com/in/rahul-arepaka/"
+            target="_blank"
+          >
+            <Button
+              variant="ghost"
+              //colorScheme="teal"
+              leftIcon={<Icon as={IoLogoLinkedin} />}
+            ></Button>
+          </Link>
+
+          <Link href="https://instagram.com/rahularepaka" target="_blank">
+            <Button
+              variant="ghost"
+              leftIcon={<Icon as={IoLogoInstagram} />}
+            ></Button>
+          </Link>
+
+          <Link href="mailto:rahul.arepaka@gmail.com" target="_blank">
+            <Button
+              variant="ghost"
+              leftIcon={<Icon as={IoLogoGoogle} />}
+            ></Button>
+          </Link>
+
+          <Link
+            href="mailto:rahul20ucse156@mahindrauniversity.edu.in"
+            target="_blank"
+          >
+            <Button
+              variant="ghost"
+              leftIcon={<Icon as={IoLogoMicrosoft} />}
+            ></Button>
+          </Link>
+
+          <Link href="https://twitter.com/RahulArepaka" target="_blank">
+            <Button
+              variant="ghost"
+              leftIcon={<Icon as={IoLogoTwitter} />}
+            ></Button>
+          </Link>
+        </List>
+      </Section>
+    </Box>
+=======
             <Link href="https://github.com/rahularepaka" target="_blank">
               <Button
                 variant="ghost"
@@ -133,6 +229,7 @@ const Home = () => (
 
 
 
+>>>>>>> a9fe259b0c996547420636885516341da02ef3e2
   </Layout>
 )
 
