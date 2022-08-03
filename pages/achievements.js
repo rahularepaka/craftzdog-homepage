@@ -1,4 +1,4 @@
-import { Container, Heading , SimpleGrid} from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 
@@ -19,7 +19,7 @@ import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
 */
 
 import wro from '../public/images/contents/wro.jpg'
-import fll from  '../public/images/contents/fll2.jpg'
+import fll from '../public/images/contents/fll2.jpg'
 import bab from '../public/images/contents/bab.jpg'
 import mu from '../public/images/contents/mu.jpg'
 import ftc from '../public/images/contents/ftc2.jpg'
@@ -29,10 +29,8 @@ import wro2 from '../public/images/contents/wro2.jpg'
 
 import win from '../public/images/contents/win.jpg'
 import oow from '../public/images/contents/oow.jpg'
-import nro  from '../public/images/contents/nro.jpg'
+import nro from '../public/images/contents/nro.jpg'
 import robocon from '../public/images/contents/robocon.webp'
-
-
 
 const Works = () => (
   <Layout title="Works">
