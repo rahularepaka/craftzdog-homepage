@@ -29,7 +29,7 @@ import wro2 from '../public/images/contents/wro2.jpg'
 
 import win from '../public/images/contents/win.jpg'
 import oow from '../public/images/contents/oow.jpg'
-import nro from '../public/images/contents/nro.jpg'
+// import nro from '../public/images/contents/nro.jpg'
 import robocon from '../public/images/contents/robocon.webp'
 
 const Works = () => (
@@ -133,7 +133,7 @@ const Works = () => (
 
       <GridItem
         title="1st Place in National Robotics Olympiad 2018 and qualifed to represent UAE"
-        thumbnail={nro}
+        thumbnail={wro2}
       />
 
       <Section />
