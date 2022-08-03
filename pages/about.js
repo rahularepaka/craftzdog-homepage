@@ -88,7 +88,7 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           About 
         </Heading>
-        <p>A II-Year student pursing Computer Science and Engineering at Ecole Centrale School of Engineering, Mahindra University.
+        <p>A III-Year student pursing Computer Science and Engineering at Ecole Centrale School of Engineering, Mahindra University.
           <br /> <br />Currently, working with Farming Revolution GmbH (Deepfield Robotics, Bosch) on a Research Project on Vision Based Laser Targeting System for Weeding in Mobile Robots.
           <br /><br />Previously, worked on Laser Weeding for CNC-based farmbot with an open-source organization called FarmBot Inc.
           <br /><br />I was part of World Robotics Olympiad as Team UAE in 2018 ,FIRST Tech Challenge and Judge at FIRST Lego League in 2019/2020 and World Robotics Olympiad in 2021.</p>

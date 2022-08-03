@@ -155,7 +155,7 @@ const Work = () => (
     <Meta>Mashable</Meta>
     <span>
       <a href="https://me.mashable.com/culture/6657/dubais-massage-card-madness-may-finally-have-a-solution">
-        Dubai's massage card madness may finally have a solution{' '}
+        Dubai massage card madness may finally have a solution{' '}
       </a>
       <ExternalLinkIcon></ExternalLinkIcon>
     </span>

@@ -1,4 +1,4 @@
-import { Heading, Box, SimpleGrid,useColorModeValue } from '@chakra-ui/react'
+import { Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import { WorkGridItem } from '../components/grid-item'
 
@@ -21,8 +21,10 @@ import dolly from '../public/images/contents/dolly.jpg'
 import clara from '../public/images/contents/clara.jpg'
 import agri from '../public/images/contents/agri.jpg'
 import laser2 from '../public/images/contents/laser2.jpg'
-import robocon1 from '../public/images/contents/robocon-1.jpeg'
+import robocon1 from '../public/images/contents/robcon1.jpg'
 import pollution1 from '../public/images/contents/pollution.jpg'
+import atv from '../public/images/contents/atv.webp'
+import lane from '../public/images/contents/landet.png'
 
 
 
@@ -32,7 +34,7 @@ const Posts = () => (
   <Layout title="Projects">
     <br />
 
-    <Box
+    {/* <Box
       borderRadius="lg"
       mb={6}
       p={3}
@@ -41,7 +43,7 @@ const Posts = () => (
     >
       Currently, Researching on Vision based laser targeting system for
       continous weeding in Moblie Robots
-    </Box>
+    </Box> */}
 
     <Heading as="h3" variant="section-title">
       Here, Some of the Projects which I worked on
@@ -52,7 +54,24 @@ const Posts = () => (
     </Heading>
     <br />
     <SimpleGrid columns={[1, 2, 2]} gap={6}>
-      <WorkGridItem id="pollutex" title="Pollution Checker" thumbnail={pollution1} href="" />
+      <WorkGridItem
+        id="atv"
+        title="Autonomous Electric ATV "
+        thumbnail={atv}
+        href=""
+      />
+      <WorkGridItem
+        id="pollutex"
+        title="Pollution Checker"
+        thumbnail={pollution1}
+        href=""
+      />
+      <WorkGridItem
+        id="lane"
+        title="Lane Detection"
+        thumbnail={lane}
+        href=""
+      />
       <WorkGridItem
         title="Robocon 2022 : Lagori"
         thumbnail={robocon1}
@@ -68,22 +87,26 @@ const Posts = () => (
       <WorkGridItem
         title="Vision based laser targeting system for continous weeding in Moblie Robots"
         thumbnail={laser2}
+        id="farmingrev"
       />
 
       <WorkGridItem
         title="Object Detection using YOLOv4 and Streamlit WebApp"
         thumbnail={Yolo}
+        id="obj"
         href="https://github.com/rahularepaka/ObjectDetectionYolov4Web"
       />
       <WorkGridItem
         title="DAA Self Driving Car Dashboard"
         thumbnail={car}
+        id="daa"
         href="https://github.com/crypto-code/Car-Dashboard-Studio"
       />
 
       <WorkGridItem
         title="Laser Weeding for FarmBot"
         thumbnail={laser}
+        id="laser"
         href="https://blog.inkdrop.app/how-ive-attracted-the-first-500-paid-users-for-my-saas-that-costs-5-mo-7a5b94b8e820"
       />
       <SimpleGrid></SimpleGrid>
@@ -95,17 +118,20 @@ const Posts = () => (
       <WorkGridItem
         title="Recipie Generator using API"
         thumbnail={food}
+        id="food"
         href="https://github.com/rahularepaka/Recipe-Generator"
       />
 
       <WorkGridItem
-        title="Mask and Temperature Detection"
+        title="Mask Detection"
         thumbnail={mask}
+        id="mask"
         href="https://github.com/rahularepaka/maskdetection"
       />
       <WorkGridItem
         title="Alcohol Detection with Engine Lock"
         thumbnail={alcohol}
+        id="alco"
         href="https://github.com/rahularepaka/arduino_Alcoholdetection"
       />
 
@@ -118,9 +144,10 @@ const Posts = () => (
       <WorkGridItem
         title="Waste Card Collector"
         thumbnail={em}
+        id="emc2"
         href="https://www.khaleejtimes.com/article/dubai-students-invent-machine-to-get-rid-of-massage-card-trash"
       />
-      <WorkGridItem title="Dolly" thumbnail={dolly} href="" />
+      <WorkGridItem title="Dolly" id="dolly" thumbnail={dolly} href="" />
       <br />
       <SimpleGrid></SimpleGrid>
       <Heading as="h3" variant="section-title">
@@ -129,7 +156,7 @@ const Posts = () => (
       <br />
 
       <WorkGridItem id="clara" title="Clara" thumbnail={clara} href="" />
-      <WorkGridItem title="AgriBot - Companion" thumbnail={agri} href="" />
+      <WorkGridItem title="AgriBot - Companion" id="agribot" thumbnail={agri} href="" />
     </SimpleGrid>
   </Layout>
 )

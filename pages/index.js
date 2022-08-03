@@ -59,7 +59,7 @@ const Home = () => (
 
           <br></br>
 
-          <small> Updated : 27-December-2021</small>
+          {/* <small> Updated : 27-December-2021</small> */}
 
 
         
