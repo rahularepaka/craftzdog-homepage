@@ -14,7 +14,7 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
-import ThemeToggleButton from './theme-toggle-button'
+// import ThemeToggleButton from './theme-toggle-button'
 //import { IoLogoGithub } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, _target, children, ...props }) => {
@@ -24,12 +24,13 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
     <NextLink href={href} passHref>
       <Link
         p={2}
-        bg={active ? '#202020' : undefined}
+        bg={active ? '#393E46' : undefined}
         color={active ? '#FFFFFF' : inactiveColor}
         _target={_target}
         {...props}
+        borderRadius="lg"
       >
-        {children}  
+        {children}
       </Link>
     </NextLink>
   )
@@ -43,7 +44,7 @@ const Navbar = props => {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#ffffff40', '#151515')}
+      bg={useColorModeValue('#ffffff40', '#222831')}
       style={{ backdropFilter: 'blur(10px)' }}
       zIndex={1}
       {...props}
@@ -57,8 +58,8 @@ const Navbar = props => {
         justify="space-between"
       >
         <Flex align="center" mr={5}>
-        <LinkItem href="/" path={path}>
-          Rahul Arepaka
+          <LinkItem href="/" path={path}>
+            Rahul Arepaka
           </LinkItem>
         </Flex>
 
@@ -70,12 +71,7 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-
-          <LinkItem href="/about" path={path}>
-            About
-          </LinkItem>
-
-          <LinkItem
+          {/* <LinkItem
             _target="_blank"
             href="/work"
             path={path}
@@ -85,31 +81,50 @@ const Navbar = props => {
             //pl={2}
           >
             Work
-          </LinkItem>
+          </LinkItem> */}
 
-          <LinkItem href="/projects" path={path}>
-            Projects
-          </LinkItem>
-
-          <LinkItem href="/coursework" path={path}>
+          {/* <LinkItem href="/coursework" path={path}>
             Coursework
           </LinkItem>
 
           <LinkItem href="/achievements" path={path}>
             Achievements
-          </LinkItem>
-
-          <LinkItem href="/contact" path={path}>
-            Contact
-          </LinkItem>
-          
-          
-          
-
+          </LinkItem> */}
         </Stack>
 
         <Box flex={1} align="right">
-          <ThemeToggleButton />
+          {/* <ThemeToggleButton /> */}
+          <Stack
+            direction={{ base: 'column', md: 'row' }}
+            display={{ base: 'none', md: 'flex' }}
+            width={{ base: 'full', md: 'auto' }}
+            alignItems="center"
+            flexGrow={1}
+            mt={{ base: 4, md: 0 }}
+          >
+            <LinkItem href="/about" path={path}>
+              About
+            </LinkItem>
+            <LinkItem href="/projects" path={path}>
+              Projects
+            </LinkItem>
+            <LinkItem href="/contact" path={path}>
+              Contact
+            </LinkItem>
+
+            <Box
+              borderRadius="lg"
+              mb={6}
+              p={3}
+              href=""
+              textAlign="center"
+              bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+            >
+              <a href="https://drive.google.com/file/d/1Xqn4qYNiPXKIVoS0IKgzHxub86FI71HR/view?usp=sharing">
+                Resume
+              </a>
+            </Box>
+          </Stack>
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
@@ -123,24 +138,28 @@ const Navbar = props => {
                 <NextLink href="/about" passHref>
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
-                <NextLink href="/achievements" passHref>
+                {/* <NextLink href="/achievements" passHref>
                   <MenuItem as={Link}>Achievements</MenuItem>
-                </NextLink>
+                </NextLink> */}
                 <NextLink href="/projects" passHref>
                   <MenuItem as={Link}>Projects</MenuItem>
                 </NextLink>
-                <NextLink href="/coursework" passHref>
+                {/* <NextLink href="/coursework" passHref>
                   <MenuItem as={Link}>Coursework</MenuItem>
                 </NextLink>
                 <NextLink href="/work" passHref>
                   <MenuItem as={Link}>Work</MenuItem>
+                </NextLink> */}
+
+                <NextLink
+                  href="https://drive.google.com/file/d/1Xqn4qYNiPXKIVoS0IKgzHxub86FI71HR/view?usp=sharing"
+                  passHref
+                >
+                  <MenuItem as={Link}>Resume</MenuItem>
                 </NextLink>
                 <NextLink href="/contact" passHref>
                   <MenuItem as={Link}>Contact</MenuItem>
                 </NextLink>
-                
-                
-                
               </MenuList>
             </Menu>
           </Box>

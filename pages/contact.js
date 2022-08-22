@@ -1,32 +1,21 @@
-import { Container, Image, Heading ,Box,List,Link,Button,Icon} from '@chakra-ui/react'
-import Layout from '../components/layouts/article'
-
-import {
-  IoLogoGithub,
-  IoLogoGoogle,
-  IoLogoLinkedin,
-  IoLogoInstagram,
-  IoLogoMicrosoft,
-  IoLogoTwitter
-} from 'react-icons/io5'
-
+//import NextLink from 'next/link'
+import { Link, Heading, Box, Image, Button, List, Icon, Container } from '@chakra-ui/react'
+//import { ChevronRightIcon } from '@chakra-ui/icons'
+//import Paragraph from '../components/paragraph'
 //import { BioSection, BioYear } from '../components/bio'
-
-/*
-import { WorkGridItem } from '../components/grid-item'
-
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
-import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
-import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
-import thumbMenkiki from '../public/images/works/menkiki_eyecatch.png'
-import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png'
-import thumbStyly from '../public/images/works/styly_eyecatch.png'
-import thumbPichu2 from '../public/images/works/pichu2_eyecatch.png'
-import thumbFreeDBTagger from '../public/images/works/freedbtagger_eyecatch.png'
-import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
-*/
-
-
+import Layout from '../components/layouts/article'
+import Section from '../components/section'
+//import { GridItem } from '../components/grid-item'
+import {
+  IoLogoInstagram,
+  IoLogoGithub,
+  IoLogoLinkedin,
+  IoLogoGoogle,
+  IoLogoTwitter,
+  IoLogoMicrosoft
+} from 'react-icons/io5'
+//import thumbYouTube from '../public/images/links/youtube.png'
+//import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 // import dynamic from 'next/dynamic'
 
 // import VoxelDogLoader from '../components/voxel-dog-loader'
@@ -36,35 +25,48 @@ import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
 //   loading: () => <VoxelDogLoader />
 // })
 
-
-
-const Works = () => (
-  <Layout title="Works">
-    <Container>
+const Home = () => (
+  <Layout>
+    <Box
+      flexShrink={0}
+      mt={{ base: 4, md: 0 }}
+      ml={{ md: 6 }}
+      textAlign="center"
+    >
+      {/* <box>
+        <LazyVoxelDog />
+      </box> */}
+      <br></br>
       <Image
         // maxWidth="150px"
+        borderColor="whiteAlpha.800"
+        borderWidth={2}
+        borderStyle="solid"
+        // maxWidth="300px"
+        width="375px"
         display="inline-block"
-        src="/images/contents/ani.gif"
+        borderRadius="full"
+        src="/images/prof2.png"
         alt="Profile image"
       />
-      <Box
-        flexShrink={0}
-        mt={{ base: 4, md: 0 }}
-        ml={{ md: 6 }}
-        textAlign="center"
-      >
-        <Heading as="h2" variant="section-title">
-          Get in Touch
+      <br></br>
+      <br></br>
+      <Container>
+        <Heading as="h3" variant="section-title">
+          Get in Touch!
         </Heading>
-        <br></br>
-
         <p>
           I am always looking for any new opportunities, my inbox is always
           open. Whether you have a question or just want to say hi, I’ll try my
           best to get back to you!
         </p>
+      </Container>
 
-        <br></br>
+      <br></br>
+
+      {/* <small> Updated : 27-December-2021</small> */}
+
+      <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           Social
         </Heading>
@@ -120,9 +122,9 @@ const Works = () => (
             ></Button>
           </Link>
         </List>
-      </Box>
-    </Container>
+      </Section>
+    </Box>
   </Layout>
 )
 
-export default Works
+export default Home

@@ -6,6 +6,7 @@ import {
   Button,
   List,
   Icon,
+  Container,
 } from '@chakra-ui/react'
 //import { ChevronRightIcon } from '@chakra-ui/icons'
 //import Paragraph from '../components/paragraph'
@@ -44,26 +45,32 @@ const Home = () => (
       {/* <box>
         <LazyVoxelDog />
       </box> */}
-
+      <br></br>
       <Image
         // maxWidth="150px"
-        width="600px"
+        borderColor="whiteAlpha.800"
+        borderWidth={2}
+        borderStyle="solid"
+        // maxWidth="300px"
+        width="375px"
         display="inline-block"
-        src="/images/contents/ani.gif"
+        borderRadius="full"
+        src="/images/prof2.png"
         alt="Profile image"
       />
-      {/* <Heading as="h1" variant="page-title">
-        <b>
-          <u>Ahlan</u>{' '}
-        </b>
+      <br></br>
+      <br></br>
+      <Heading as="h1" variant="page-title">
+        <b>أهلاً (Ahlan) </b>
         👋
-        <br></br>
-      </Heading> */}
-
-      <Heading as="h2" fontSize={50} my={6}>
-        🤖 💻 🔨 👨‍🌾
       </Heading>
-      
+      <br></br>
+      <Container>
+        <Heading as="h4" variant="section-title">
+          Undergradute Robotics Researcher
+        </Heading>
+      </Container>
+
       <br></br>
 
       {/* <small> Updated : 27-December-2021</small> */}

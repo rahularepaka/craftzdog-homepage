@@ -46,7 +46,7 @@ const Posts = () => (
     </Box> */}
 
     <Heading as="h3" variant="section-title">
-      Here, Some of the Projects which I worked on
+      Projects which I worked on
     </Heading>
     <br />
     <Heading as="h3" variant="section-title">
