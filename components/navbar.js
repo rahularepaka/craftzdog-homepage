@@ -104,9 +104,9 @@ const Navbar = props => {
             <LinkItem href="/projects" path={path}>
               Projects
             </LinkItem>
-            <LinkItem href="/achievements" path={path}>
+            {/* <LinkItem href="/achievements" path={path}>
               Achievements
-            </LinkItem>
+            </LinkItem> */}
             <LinkItem href="/contact" path={path}>
               Contact
             </LinkItem>
@@ -137,9 +137,9 @@ const Navbar = props => {
                 <NextLink href="/about" passHref>
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
-                <NextLink href="/achievements" passHref>
+                {/* <NextLink href="/achievements" passHref>
                   <MenuItem as={Link}>Achievements</MenuItem>
-                </NextLink>
+                </NextLink> */}
                 <NextLink href="/projects" passHref>
                   <MenuItem as={Link}>Projects</MenuItem>
                 </NextLink>
