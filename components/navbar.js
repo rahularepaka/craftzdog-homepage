@@ -98,18 +98,28 @@ const Navbar = props => {
             flexGrow={1}
             mt={{ base: 4, md: 0 }}
           >
-            <LinkItem href="/about" path={path}>
+            {/* <LinkItem href="/about" path={path}>
               About
-            </LinkItem>
+            </LinkItem> */}
+
+            <LinkItem href="" path={path}></LinkItem>
+            <LinkItem href="" path={path}></LinkItem>
+            <LinkItem href="" path={path}></LinkItem>
+            <LinkItem href="" path={path}></LinkItem>
+            <LinkItem href="" path={path}></LinkItem>
+            <LinkItem href="" path={path}></LinkItem>
+            <LinkItem href="" path={path}></LinkItem>
+            <LinkItem href="" path={path}></LinkItem>
+
             <LinkItem href="/projects" path={path}>
               Projects
             </LinkItem>
             {/* <LinkItem href="/achievements" path={path}>
               Achievements
             </LinkItem> */}
-            <LinkItem href="/contact" path={path}>
+            {/* <LinkItem href="/contact" path={path}>
               Contact
-            </LinkItem>
+            </LinkItem> */}
 
             <Box
               borderRadius="lg"
@@ -134,9 +144,9 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <NextLink href="/about" passHref>
+                {/* <NextLink href="/about" passHref>
                   <MenuItem as={Link}>About</MenuItem>
-                </NextLink>
+                </NextLink> */}
                 {/* <NextLink href="/achievements" passHref>
                   <MenuItem as={Link}>Achievements</MenuItem>
                 </NextLink> */}
@@ -156,9 +166,9 @@ const Navbar = props => {
                 >
                   <MenuItem as={Link}>Resume</MenuItem>
                 </NextLink>
-                <NextLink href="/contact" passHref>
+                {/* <NextLink href="/contact" passHref>
                   <MenuItem as={Link}>Contact</MenuItem>
-                </NextLink>
+                </NextLink> */}
               </MenuList>
             </Menu>
           </Box>
