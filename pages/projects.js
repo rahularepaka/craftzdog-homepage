@@ -54,12 +54,12 @@ const Posts = () => (
     </Heading>
     <br />
     <SimpleGrid columns={[1, 2, 2]} gap={6}>
-      <WorkGridItem
+      {/* <WorkGridItem
         id="atv"
         title="Autonomous Electric ATV "
         thumbnail={atv}
         href=""
-      />
+      /> */}
       <WorkGridItem
         id="pollutex"
         title="Pollution Checker"

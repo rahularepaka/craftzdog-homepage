@@ -60,6 +60,59 @@ const Home = () => (
           Rahul Arepaka
         </Heading>
         <p>Undergraduate Robotics Researcher (Agri-Tech)</p>
+        
+        <List>
+          <Link href="https://github.com/rahularepaka" target="_blank">
+            <Button
+              variant="ghost"
+              //colorScheme="teal"
+              align="center"
+              leftIcon={<Icon as={IoLogoGithub} />}
+            ></Button>
+          </Link>
+
+          <Link
+            href="https://www.linkedin.com/in/rahul-arepaka/"
+            target="_blank"
+          >
+            <Button
+              variant="ghost"
+              //colorScheme="teal"
+              leftIcon={<Icon as={IoLogoLinkedin} />}
+            ></Button>
+          </Link>
+
+          <Link href="https://instagram.com/rahularepaka" target="_blank">
+            <Button
+              variant="ghost"
+              leftIcon={<Icon as={IoLogoInstagram} />}
+            ></Button>
+          </Link>
+
+          <Link href="mailto:rahul.arepaka@gmail.com" target="_blank">
+            <Button
+              variant="ghost"
+              leftIcon={<Icon as={IoLogoGoogle} />}
+            ></Button>
+          </Link>
+
+          <Link
+            href="mailto:rahul20ucse156@mahindrauniversity.edu.in"
+            target="_blank"
+          >
+            <Button
+              variant="ghost"
+              leftIcon={<Icon as={IoLogoMicrosoft} />}
+            ></Button>
+          </Link>
+
+          <Link href="https://twitter.com/RahulArepaka" target="_blank">
+            <Button
+              variant="ghost"
+              leftIcon={<Icon as={IoLogoTwitter} />}
+            ></Button>
+          </Link>
+        </List>
       </Box>
       <Box
         flexShrink={0}
@@ -180,11 +233,11 @@ const Home = () => (
       </Container>
     </Section>
 
-    <Section delay={0.3}>
-      <Heading as="h3" variant="section-title">
+    {/* <Section delay={0.3}> */}
+      {/* <Heading as="h3" variant="section-title">
         Social
-      </Heading>
-      <List>
+      </Heading> */}
+      {/* <List>
         <Link href="https://github.com/rahularepaka" target="_blank">
           <Button
             variant="ghost"
@@ -232,8 +285,8 @@ const Home = () => (
             leftIcon={<Icon as={IoLogoTwitter} />}
           ></Button>
         </Link>
-      </List>
-    </Section>
+      </List> */}
+    {/* </Section> */}
   </Layout>
 )
 
