@@ -23,7 +23,7 @@ import agri from '../public/images/contents/agri.jpg'
 import laser2 from '../public/images/contents/laser2.jpg'
 import robocon1 from '../public/images/contents/robcon1.jpg'
 import pollution1 from '../public/images/contents/pollution.jpg'
-import atv from '../public/images/contents/atv.webp'
+// import atv from '../public/images/contents/atv.webp'
 import lane from '../public/images/contents/landet.png'
 
 
